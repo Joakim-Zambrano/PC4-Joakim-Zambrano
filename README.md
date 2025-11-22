@@ -1,2 +1,2 @@
 # PC4-Joakim-Zambrano
-Blog
+[Blog](https://pythoncoreblog.streamlit.app/)
