@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c49131490dcdde0aa5d98b30da07ae4c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c49131490dcdde0aa5d98b30da07ae4c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c49131490dcdde0aa5d98b30da07ae4c = L.map(
+                "map_c49131490dcdde0aa5d98b30da07ae4c",
+                {
+                    center: [-15.0, -60.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 3,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4e54f95bc1957608765abb5053ce1951 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4e54f95bc1957608765abb5053ce1951.addTo(map_c49131490dcdde0aa5d98b30da07ae4c);
+        
+    
+            var marker_7b7c76712af380534afb7853401d8d40 = L.marker(
+                [49.2827, -123.1207],
+                {
+}
+            ).addTo(map_c49131490dcdde0aa5d98b30da07ae4c);
+        
+    
+            var icon_bb07e4a3f162f40a0130751eb42e0ee7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f2f96d00ba68dbb63223f151878951c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c76b13a8789ef9cb61e18db6d50b8b4c = $(`<div id="html_c76b13a8789ef9cb61e18db6d50b8b4c" style="width: 100.0%; height: 100.0%;">{'Caso 39': {'director': 'Christian Alvart', 'año': 2009, 'género': 'Terror', 'país': 'Canadá', 'ubicación': 'Vancouver', 'latitud': 49.2827, 'longitud': -123.1207}, 'Parasite': {'director': 'Bong Joon-ho', 'año': 2019, 'género': 'Drama', 'país': 'Corea del Sur', 'ubicación': 'Seúl', 'latitud': 37.5665, 'longitud': 126.978}, "Five Nights at Freddy's": {'director': 'Emma Tammi', 'año': 2023, 'género': 'Terror', 'país': 'Estados Unidos', 'ubicación': 'Nueva Orleans', 'latitud': 29.9511, 'longitud': -90.0715}, 'El Camino: A Breaking Bad Movie': {'director': 'Vince Gilligan', 'año': 2019, 'género': 'Drama', 'país': 'Estados Unidos', 'ubicación': 'Albuquerque', 'latitud': 35.0844, 'longitud': -106.6504}, 'Pedro Páramo': {'director': 'Rodrigo Prieto', 'año': 2024, 'género': 'Misterio', 'país': 'Mexico', 'ubicación': 'San Luis Potosí', 'latitud': 22.144, 'longitud': -100.8}}</div>`)[0];
+                popup_f2f96d00ba68dbb63223f151878951c8.setContent(html_c76b13a8789ef9cb61e18db6d50b8b4c);
+            
+        
+
+        marker_7b7c76712af380534afb7853401d8d40.bindPopup(popup_f2f96d00ba68dbb63223f151878951c8)
+        ;
+
+        
+    
+    
+                marker_7b7c76712af380534afb7853401d8d40.setIcon(icon_bb07e4a3f162f40a0130751eb42e0ee7);
+            
+    
+            var marker_430746e97e3498d5c2eaba1ead1feae8 = L.marker(
+                [37.5665, 126.978],
+                {
+}
+            ).addTo(map_c49131490dcdde0aa5d98b30da07ae4c);
+        
+    
+            var icon_e42587c97a7cc6b9236afb946a4c6662 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3d15dbdfa286d15de3a8ec64ca961c7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d15123b295326a3105dd10d877e6e38b = $(`<div id="html_d15123b295326a3105dd10d877e6e38b" style="width: 100.0%; height: 100.0%;">{'Caso 39': {'director': 'Christian Alvart', 'año': 2009, 'género': 'Terror', 'país': 'Canadá', 'ubicación': 'Vancouver', 'latitud': 49.2827, 'longitud': -123.1207}, 'Parasite': {'director': 'Bong Joon-ho', 'año': 2019, 'género': 'Drama', 'país': 'Corea del Sur', 'ubicación': 'Seúl', 'latitud': 37.5665, 'longitud': 126.978}, "Five Nights at Freddy's": {'director': 'Emma Tammi', 'año': 2023, 'género': 'Terror', 'país': 'Estados Unidos', 'ubicación': 'Nueva Orleans', 'latitud': 29.9511, 'longitud': -90.0715}, 'El Camino: A Breaking Bad Movie': {'director': 'Vince Gilligan', 'año': 2019, 'género': 'Drama', 'país': 'Estados Unidos', 'ubicación': 'Albuquerque', 'latitud': 35.0844, 'longitud': -106.6504}, 'Pedro Páramo': {'director': 'Rodrigo Prieto', 'año': 2024, 'género': 'Misterio', 'país': 'Mexico', 'ubicación': 'San Luis Potosí', 'latitud': 22.144, 'longitud': -100.8}}</div>`)[0];
+                popup_3d15dbdfa286d15de3a8ec64ca961c7a.setContent(html_d15123b295326a3105dd10d877e6e38b);
+            
+        
+
+        marker_430746e97e3498d5c2eaba1ead1feae8.bindPopup(popup_3d15dbdfa286d15de3a8ec64ca961c7a)
+        ;
+
+        
+    
+    
+                marker_430746e97e3498d5c2eaba1ead1feae8.setIcon(icon_e42587c97a7cc6b9236afb946a4c6662);
+            
+    
+            var marker_33a389ae2a00ca6e1c93f86194404f88 = L.marker(
+                [29.9511, -90.0715],
+                {
+}
+            ).addTo(map_c49131490dcdde0aa5d98b30da07ae4c);
+        
+    
+            var icon_2bb59b2489f14f5cde51516f4555a7e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e598fee7688d261a30c34aeb395c322 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75b86c8f0a82757de38fa658a78357e5 = $(`<div id="html_75b86c8f0a82757de38fa658a78357e5" style="width: 100.0%; height: 100.0%;">{'Caso 39': {'director': 'Christian Alvart', 'año': 2009, 'género': 'Terror', 'país': 'Canadá', 'ubicación': 'Vancouver', 'latitud': 49.2827, 'longitud': -123.1207}, 'Parasite': {'director': 'Bong Joon-ho', 'año': 2019, 'género': 'Drama', 'país': 'Corea del Sur', 'ubicación': 'Seúl', 'latitud': 37.5665, 'longitud': 126.978}, "Five Nights at Freddy's": {'director': 'Emma Tammi', 'año': 2023, 'género': 'Terror', 'país': 'Estados Unidos', 'ubicación': 'Nueva Orleans', 'latitud': 29.9511, 'longitud': -90.0715}, 'El Camino: A Breaking Bad Movie': {'director': 'Vince Gilligan', 'año': 2019, 'género': 'Drama', 'país': 'Estados Unidos', 'ubicación': 'Albuquerque', 'latitud': 35.0844, 'longitud': -106.6504}, 'Pedro Páramo': {'director': 'Rodrigo Prieto', 'año': 2024, 'género': 'Misterio', 'país': 'Mexico', 'ubicación': 'San Luis Potosí', 'latitud': 22.144, 'longitud': -100.8}}</div>`)[0];
+                popup_5e598fee7688d261a30c34aeb395c322.setContent(html_75b86c8f0a82757de38fa658a78357e5);
+            
+        
+
+        marker_33a389ae2a00ca6e1c93f86194404f88.bindPopup(popup_5e598fee7688d261a30c34aeb395c322)
+        ;
+
+        
+    
+    
+                marker_33a389ae2a00ca6e1c93f86194404f88.setIcon(icon_2bb59b2489f14f5cde51516f4555a7e1);
+            
+    
+            var marker_f72de79c931242ccc780db82a4250bf7 = L.marker(
+                [35.0844, -106.6504],
+                {
+}
+            ).addTo(map_c49131490dcdde0aa5d98b30da07ae4c);
+        
+    
+            var icon_c34e6e9c10381973e410e23166811cc6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f8687c282913c1d607453774a5ed13f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a284b274550a5b25bbf77aa064602015 = $(`<div id="html_a284b274550a5b25bbf77aa064602015" style="width: 100.0%; height: 100.0%;">{'Caso 39': {'director': 'Christian Alvart', 'año': 2009, 'género': 'Terror', 'país': 'Canadá', 'ubicación': 'Vancouver', 'latitud': 49.2827, 'longitud': -123.1207}, 'Parasite': {'director': 'Bong Joon-ho', 'año': 2019, 'género': 'Drama', 'país': 'Corea del Sur', 'ubicación': 'Seúl', 'latitud': 37.5665, 'longitud': 126.978}, "Five Nights at Freddy's": {'director': 'Emma Tammi', 'año': 2023, 'género': 'Terror', 'país': 'Estados Unidos', 'ubicación': 'Nueva Orleans', 'latitud': 29.9511, 'longitud': -90.0715}, 'El Camino: A Breaking Bad Movie': {'director': 'Vince Gilligan', 'año': 2019, 'género': 'Drama', 'país': 'Estados Unidos', 'ubicación': 'Albuquerque', 'latitud': 35.0844, 'longitud': -106.6504}, 'Pedro Páramo': {'director': 'Rodrigo Prieto', 'año': 2024, 'género': 'Misterio', 'país': 'Mexico', 'ubicación': 'San Luis Potosí', 'latitud': 22.144, 'longitud': -100.8}}</div>`)[0];
+                popup_4f8687c282913c1d607453774a5ed13f.setContent(html_a284b274550a5b25bbf77aa064602015);
+            
+        
+
+        marker_f72de79c931242ccc780db82a4250bf7.bindPopup(popup_4f8687c282913c1d607453774a5ed13f)
+        ;
+
+        
+    
+    
+                marker_f72de79c931242ccc780db82a4250bf7.setIcon(icon_c34e6e9c10381973e410e23166811cc6);
+            
+    
+            var marker_d581212f97b4eac002b52604c0878c74 = L.marker(
+                [22.144, -100.8],
+                {
+}
+            ).addTo(map_c49131490dcdde0aa5d98b30da07ae4c);
+        
+    
+            var icon_e400cacc60ef57eaf63eb152aa619289 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "film",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87a0c527fa0b117297f83132e51a1168 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e334bfed533675e693dfe9f18190ffc1 = $(`<div id="html_e334bfed533675e693dfe9f18190ffc1" style="width: 100.0%; height: 100.0%;">{'Caso 39': {'director': 'Christian Alvart', 'año': 2009, 'género': 'Terror', 'país': 'Canadá', 'ubicación': 'Vancouver', 'latitud': 49.2827, 'longitud': -123.1207}, 'Parasite': {'director': 'Bong Joon-ho', 'año': 2019, 'género': 'Drama', 'país': 'Corea del Sur', 'ubicación': 'Seúl', 'latitud': 37.5665, 'longitud': 126.978}, "Five Nights at Freddy's": {'director': 'Emma Tammi', 'año': 2023, 'género': 'Terror', 'país': 'Estados Unidos', 'ubicación': 'Nueva Orleans', 'latitud': 29.9511, 'longitud': -90.0715}, 'El Camino: A Breaking Bad Movie': {'director': 'Vince Gilligan', 'año': 2019, 'género': 'Drama', 'país': 'Estados Unidos', 'ubicación': 'Albuquerque', 'latitud': 35.0844, 'longitud': -106.6504}, 'Pedro Páramo': {'director': 'Rodrigo Prieto', 'año': 2024, 'género': 'Misterio', 'país': 'Mexico', 'ubicación': 'San Luis Potosí', 'latitud': 22.144, 'longitud': -100.8}}</div>`)[0];
+                popup_87a0c527fa0b117297f83132e51a1168.setContent(html_e334bfed533675e693dfe9f18190ffc1);
+            
+        
+
+        marker_d581212f97b4eac002b52604c0878c74.bindPopup(popup_87a0c527fa0b117297f83132e51a1168)
+        ;
+
+        
+    
+    
+                marker_d581212f97b4eac002b52604c0878c74.setIcon(icon_e400cacc60ef57eaf63eb152aa619289);
+            
+</script>
+</html>
