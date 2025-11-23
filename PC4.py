@@ -45,7 +45,7 @@ pagina_seleccionada = st.sidebar.selectbox('Selecciona la sección que deseas ve
 if pagina_seleccionada == 'Inicio':
 
     # La función st.markdown permite centrar y agrandar la letra del título de la web en Streamlit.
-    st.markdown("<h1 style='text-align: center;'>Python Core</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Python Core ⋆⭒˚.⋆🪐 ⋆⭒˚.⋆</h1>", unsafe_allow_html=True)
 
     # <h1 style='text-align: center;'>Nombre de tu blog</h1>: Esto es una cadena de código HTML. 
     # La etiqueta <h1> se utiliza para el encabezado principal de una página web, y 
@@ -69,7 +69,7 @@ if pagina_seleccionada == 'Inicio':
     # Las columnas creadas se asignan a las variables col1 y col2.
 
     # En la primera columna colocamos la imagen de perfil
-    col1.image("FotoPerfil.png", caption='Foto de perfil', width=300)
+    col1.image("FotoPerfil.png", caption='Foto de perfil 🖼️', width=300)
 
     # col1.image("ellie.png", caption='Ellie', width=300): Esta línea está colocando una imagen en la primera columna (col1). 
     # La función image toma como primer argumento el nombre del archivo de la imagen que se desea mostrar. 
@@ -83,7 +83,7 @@ if pagina_seleccionada == 'Inicio':
     # ¿Qué te gustaría hacer en el futuro?, ¿Qué te gusta hacer en tu tiempo libre?
 
     texto = """
-    Hola, mi nombre es Joakim Zambrano, tengo 20 años, soy de Lima y actualmente estudio Periodismo en la Pontificia Universidad Católica del Perú (PUCP). Lo que más me gusta de mi carrera es la redacción periodística y la creación de contenido, ya que me permite contar historias de una manera creativa. En el futuro, me gustaría escribir un libro o incluso producir una serie de televisión, todo mientras tenga la oportunidad de viajar a otro país. En mi tiempo libre me gusta editar videos, escuchar música, dibujar y jugar videojuegos, porque me permite desconectarme y explorar otras formas de relajación. 
+    Hola 😉, mi nombre es Joakim Zambrano, tengo 20 años, soy de Lima y actualmente estudio Periodismo en la Pontificia Universidad Católica del Perú (PUCP). Lo que más me gusta de mi carrera es la redacción periodística y la creación de contenido, ya que me permite contar historias de una manera creativa. En el futuro, me gustaría escribir un libro o incluso producir una serie de televisión, todo mientras tenga la oportunidad de viajar a otro país. En mi tiempo libre me gusta editar videos, escuchar música, dibujar y jugar videojuegos, porque me permite desconectarme y explorar otras formas de relajación. 
     """
 
     # Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
@@ -112,7 +112,7 @@ elif  pagina_seleccionada == 'Experiencia':
 
     # Agregar un  texto para la respuesta
     texto_2 = """
-    Cuando comencé a programar, ya tenía algo de experiencia, ya que hace unos cinco años modifiqué un videojuego utilizando el bloc de notas. Sin embargo, al iniciar el curso, sentí un poco de miedo, especialmente por las PCs, porque pensaba que me iba a quedar en blanco y sacar mala nota. Con el tiempo, la programación me ha enseñado que los códigos son la base de muchas de las herramientas y servicios que usamos hoy en día, y que detrás de cada página web o aplicación hay un código que lo hacen funcionar. Lo que más me gusta de programar es la satisfacción de ver el resultado final, a pesar de lo tedioso que puede ser el proceso. En el futuro, me gustaría usar lo que he aprendido para crear algún videojuego, aunque sea algo pequeño, porque me atrae la idea de construir algo propio.
+    Cuando comencé a programar, ya tenía algo de experiencia, ya que hace unos cinco años modifiqué un videojuego utilizando el bloc de notas 🕹️ Sin embargo, al iniciar el curso, sentí un poco de miedo, especialmente por las PCs, porque pensaba que me iba a quedar en blanco y sacar mala nota. Con el tiempo, la programación me ha enseñado que los códigos son la base de muchas de las herramientas y servicios que usamos hoy en día, y que detrás de cada página web o aplicación hay un código que lo hacen funcionar. Lo que más me gusta de programar es la satisfacción de ver el resultado final, a pesar de lo tedioso que puede ser el proceso. En el futuro, me gustaría usar lo que he aprendido para crear algún videojuego, aunque sea algo pequeño, porque me atrae la idea de construir algo propio.
     """
 
     # Mostramos el texto
@@ -128,7 +128,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # En este caso, {texto_2} se reemplaza por el valor de la variable texto.
 
     # Agregamos un subtítulo para el video
-    st.markdown("<h2 style='text-align: center;'>Esta es una explicación de las diferencias de las declaraciones condicionales if,elif y else</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>🧐 Esta es una explicación de las diferencias de las declaraciones condicionales if,elif y else</h2>", unsafe_allow_html=True)
     
     # <h2 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tu video</h2>: Esta es una cadena de código HTML.
     # La etiqueta <h2> se utiliza para un encabezado de segundo nivel en una página web.
@@ -200,7 +200,7 @@ else:
         st.image("Grafico3OsasunaGolesLocal.png", caption='Gráfico de goles de Osasuna como local', width=500)
         pass
     elif grafico_seleccionado == 'Mapa peliculas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>🗺️ Este mapa muestra información acerca de algunas películas. Estas son Caso 39, Parasite, Five Nights at Freddy's, El Camino y Pedro Páramo.</div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
         with open("MapaPeliculas.html", "r", encoding="utf-8") as f:
