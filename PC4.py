@@ -188,15 +188,15 @@ else:
 
     # Mostramos el gráfico seleccionado
     if grafico_seleccionado == 'Gráfico de pie chart de los resultados del equipo Osasuna como local':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Este pie chart muestra los resultados de Osasuna cuando participó en un partido como local. Se puede ver que ganó la mayoría de sus partidos, con un 52,6% de tasa de victorias, 15,8% de derrotas y 31,6% de empates.</div>", unsafe_allow_html=True)
         st.image("Grafico1OsasunaResultados.png", caption='Resultados de Osasuna como local', width=500)
         pass
     elif grafico_seleccionado == 'Histograma de goles que recibió el equipo de Barcelona como visitante':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>De este histograma podemos interpretar que Barcelona recibió 1 gol 9 veces mientras estuvo como visitante, siendo esta la mayor cantidad de veces que recibió un gol, seguido por 0 goles 6 veces, 2 goles 3 veces y 4 goles 1 vez.</div>", unsafe_allow_html=True)
         st.image("Grafico2BarcelonaGoles.png", caption='Grafico de goles que recibió Barcelona', width=500)
         pass
     elif grafico_seleccionado == 'Histograma de goles que Osasuna anotó como local':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Podemos ver cuántos goles anotó Osasuna como local, siendo la mayor frecuencia 1 gol en 9 oportunidades, seguido en orden decreciente con 2 goles 7 veces, 3 goles 2 veces y 4 goles 1 vez.</div>", unsafe_allow_html=True)
         st.image("Grafico3OsasunaGolesLocal.png", caption='Gráfico de goles de Osasuna como local', width=500)
         pass
     elif grafico_seleccionado == 'Mapa peliculas':
